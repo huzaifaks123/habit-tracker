@@ -1,0 +1,185 @@
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    margin: 0px;
+    background-color: #027373;
+    color: #F2E3D5;
+    box-shadow: inset 0px -2px 0px 0px rgba(63,47,65,0.2);
+}
+
+.actSideMenu {
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    font-size: xx-large;
+    height: 100%;
+    background-color: #027373;
+    z-index: 2;
+    transform: translateX(0%);
+    transition: all 200ms ease-out;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: inset 1px 1px 2px 2px rgba(63,47,65,0.2), inset -1px -1px 2px 2px rgba(63,47,65,0.2);
+}
+
+.inactSideMenu {
+    transform: translateX(100%);
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    font-size: xx-large;
+    height: 100%;
+    background-color: #027373;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: all 200ms ease-in;
+    border-radius: 0px 30px 30px 0px;
+    visibility: hidden;
+}
+
+.leftContainer {
+    font-size: larger;
+    margin-right: 10px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+}
+
+.rightContainer {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuIcon img {
+    margin-left: 20px;
+    height: 30px;
+    filter: invert(62%) sepia(13%) saturate(2773%) hue-rotate(37deg) brightness(96%) contrast(68%);
+}
+
+.profileIcon img {
+    height: 40px;
+    filter: invert(86%) sepia(25%) saturate(318%) hue-rotate(325deg) brightness(109%) contrast(90%);
+}
+
+.calendarIcon img {
+    height: 40px;
+    filter: invert(86%) sepia(25%) saturate(318%) hue-rotate(325deg) brightness(109%) contrast(90%);
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.navButton {
+    position: relative;
+    height: 40px;
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brandName {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 150px;
+}
+
+.calendarIcon {
+    position: relative;
+}
+
+.calDate {
+    position: absolute;
+    top: 14px;
+    left : 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+}
+
+.heading {
+    text-align: center;
+    color: #7EA629;
+    margin: -10px;
+}
+
+.actCreateTracker {
+    position: absolute;
+    background-color: #027373;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    width: 80%;
+    height: 580px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 200ms ease-out;
+    z-index: 2;
+    box-shadow: inset 1px 1px 2px 2px rgba(63,47,65,0.2), inset -1px -1px 2px 2px rgba(63,47,65,0.2);
+}
+
+.inActCreateTracker {
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+}
+
+.addTracker {
+    color: #7EA629;
+    background-color: #027373;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(0deg);
+    transition: all 1s ease-out;
+    z-index: 1;
+    box-shadow: inset 1px 1px 2px 2px rgba(63,47,65,0.2), inset -1px -1px 2px 2px rgba(63,47,65,0.2);
+}
+.addTracker:hover {
+    cursor: pointer;
+}
+.closeTracker {
+    color: #7EA629;
+    background-color: #027373;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(315deg);
+    transition: all 1s ease-out;
+    z-index: 1;
+    box-shadow: inset 1px 1px 2px 2px rgba(63,47,65,0.2), inset -1px -1px 2px 2px rgba(63,47,65,0.2);
+}
+.closeTracker:hover {
+    cursor: pointer;
+}

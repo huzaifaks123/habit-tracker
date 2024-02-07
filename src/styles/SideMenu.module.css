@@ -1,0 +1,33 @@
+.sideMenuContainer {
+    padding-left: 10px;
+    margin-top: 40px;
+}
+
+.navigationLink {
+    color: #F2E3D5;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.brandNameContainer {
+    width: 95%;
+    color: #7EA629;
+    height: 100px;
+    font-size: 60px;
+    display: flex;
+    font-family: cursive;
+    justify-content: space-between;
+}
+
+.close img {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    filter: invert(62%) sepia(13%) saturate(2773%) hue-rotate(37deg) brightness(96%) contrast(68%);
+    height: 20px;
+}
+
+.brandName {
+    color: #7EA629;
+    text-decoration: none;
+}

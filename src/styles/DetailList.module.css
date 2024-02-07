@@ -1,0 +1,87 @@
+.detailContainer{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #027373;
+    position: relative;
+    color: #F2E3D5;
+    font-size: larger;
+}
+.leftContainer{
+    font-size: larger;
+    margin-left: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightContainer{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkBox{
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+.favourite img{
+    height: 20px;  
+    margin-bottom: 10px;
+}
+.actFavourite img{
+    height: 20px;  
+    margin-bottom: 10px;
+    filter: invert(89%) sepia(19%) saturate(338%) hue-rotate(327deg) brightness(105%) contrast(90%);
+}
+.action{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.title{
+    display: flex;
+}
+.imgTag{
+    margin-left: 10px;
+    height: 20px;
+}
+.visDeleteContainer{
+    height: 115%;
+    width: 105%;
+    left: -10px;
+    position: absolute;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    background-color: rgb(2, 115, 115,0.7);
+}
+.hidDeleteContainer{
+    height: 120%;
+    width: 105%;
+    left: -10px;
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+}
+.actDelImg{
+    margin: 20px;
+    height: 40px;
+    z-index: 1;
+    transition: all 0.5s ease-out;
+    transform: translateX(400px);
+}
+.InActDelImg{
+    margin: 20px;
+    height: 40px;
+}
+.favHeading{
+    color: #F2E3D5;
+    text-align: center;
+    margin-top: 30px;
+}

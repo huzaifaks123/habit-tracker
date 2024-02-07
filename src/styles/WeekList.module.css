@@ -1,0 +1,96 @@
+.monthYear{
+    color: #F2E3D5;
+    width: 90%;
+    font-size: x-large;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.daysContainer{
+    color: #F2E3D5;
+    width: 90%;
+    padding: 0% 5% 0% 5%;
+    height: 20px;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7EA629 ;
+
+}
+.monthYear img{
+    height: 20px;
+    filter: invert(89%) sepia(19%) saturate(338%) hue-rotate(327deg) brightness(105%) contrast(90%);
+}
+.detailContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #F2E3D5;
+}
+
+.leftContainer {
+    font-size: larger;
+    width: 90%;
+    height: 30px;
+    padding: 0% 10% 0% 10%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightContainer {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.favourite img{
+    height: 20px;  
+    margin-bottom: 10px;
+}
+.actFavourite img{
+    height: 20px;  
+    margin-bottom: 10px;
+    filter: invert(89%) sepia(19%) saturate(338%) hue-rotate(327deg) brightness(105%) contrast(90%);
+}
+
+.action {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.weekCal {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    border-bottom: 4px solid #027373;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.boxDate {
+    position: relative;
+    width: 64px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #027373;
+}
+.boxDate img{
+    width: 90%;
+}
+.imgTag{
+    margin-left: 10px;
+    height: 20px;
+}
+.date{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 18px;
+}
