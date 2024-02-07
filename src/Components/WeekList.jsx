@@ -1,6 +1,3 @@
-// import necessory hooks
-import { useState } from "react"
-
 // import useful hooks from react-redux
 import { useDispatch, useSelector } from "react-redux"
 
@@ -8,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux"
 import styles from "../styles/WeekList.module.css"
 
 // import required actions and selector from reducers
-import { homeSelector, toggleWeekStatus, setFavourite, removeHabit } from "../Redux/Reducer/HomePageReducer"
+import { homeSelector, toggleWeekStatus, setFavourite } from "../Redux/Reducer/HomePageReducer"
 
 // create and export WeekList here
 export default function WeekList() {

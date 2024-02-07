@@ -14,7 +14,7 @@ import { warning } from "../Redux/Reducer/notificationReducer"
 // create and export DetailList here
 export default function DetailList() {
 
-    //  create required state to use within component
+    //  create required state to use within componentgit push -u origin main
     const [check, setCheck] = useState("")
 
     // create var to dispatch actions

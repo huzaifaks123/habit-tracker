@@ -1,5 +1,5 @@
 // import required toolkit
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 
 // set initial state for reducer

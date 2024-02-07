@@ -23,9 +23,6 @@ export default function WeekView() {
     // create var to dispatch actions
     const dispatch = useDispatch()
 
-    // destructure necessory state
-    const { habits } = useSelector(homeSelector)
-
     // set current day and week when component mount
     useEffect(() => {
 

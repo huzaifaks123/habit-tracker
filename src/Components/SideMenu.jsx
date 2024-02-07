@@ -2,7 +2,7 @@
 import { useDispatch, useSelector } from "react-redux"
 
 // import required actions and selector from reducers
-import { homeSelector, toggleSideMenu } from "../Redux/Reducer/HomePageReducer"
+import { toggleSideMenu } from "../Redux/Reducer/HomePageReducer"
 
 //import styles here
 import styles from "../styles/SideMenu.module.css"
