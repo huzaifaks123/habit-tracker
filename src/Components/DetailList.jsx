@@ -53,9 +53,9 @@ export default function DetailList() {
                         <input type="checkbox" checked={check === index ? true : false} onChange={() => handleChecked(index)} className={styles.checkBox}></input>
                         <div className={styles.leftContainer}>
                             <div onClick={() => handleDelete(habit)} className={check === index ? styles.visDeleteContainer : styles.hidDeleteContainer}>
-                                <img className={check === index ? styles.actDelImg : styles.InActDelImg} src="https://cdn-icons-png.flaticon.com/128/7267/7267205.png"></img>
+                                <img className={check === index ? styles.actDelImg : styles.InActDelImg} src="https://cdn-icons-png.flaticon.com/128/7267/7267205.png" alt="delImg"></img>
                             </div>
-                            <div className={styles.title}>{habit.title.text} {habit.title.img ? <img src={habit.title.img} className={styles.imgTag} /> : ""}</div>
+                            <div className={styles.title}>{habit.title.text} {habit.title.img ? <img src={habit.title.img} className={styles.imgTag} alt="catImg" /> : ""}</div>
                             <div className={styles.rightContainer}>
                                 <div className={styles.status}>{habit.time}</div>
                                 <div className={styles.action}>

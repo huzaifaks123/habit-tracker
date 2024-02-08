@@ -33,23 +33,23 @@ export default function Navbar() {
 
     // Show page name based on the path location
     useEffect(() => {
-        const path = location.pathname
-        function setName() {
-            if (path === "/detailview") {
-                setPageName("Detail View")
-            }
-            else if (path === "/weekview") {
-                setPageName("Week View")
-            }
-            else if (path === "/favourite") {
-                setPageName("Favourite")
-            }
-            else {
-                setPageName("Home")
-            }
-        }
-        setName()
-    }, [toggleMenu])
+  const path = location.pathname;
+
+  function setName() {
+    if (path === "/detailview") {
+      setPageName("Detail View");
+    } else if (path === "/weekview") {
+      setPageName("Week View");
+    } else if (path === "/favourite") {
+      setPageName("Favourite");
+    } else {
+      setPageName("Home");
+    }
+  }
+
+  setName();
+}, [location.pathname]);
+
 
     // toggle menu to open and close sideMenu
     function toggleMenu() {
@@ -68,12 +68,12 @@ export default function Navbar() {
     return (
         <>
             <div className={styles.navContainer}>
-                <div className={styles.menuIcon}><img onClick={() => toggleMenu()} src="https://cdn-icons-png.flaticon.com/128/56/56763.png" /></div>
+                <div className={styles.menuIcon}><img onClick={() => toggleMenu()} src="https://cdn-icons-png.flaticon.com/128/56/56763.png" alt="menuBar"/></div>
                 <div className={styles.leftContainer}>
                     <div className={styles.pageName}>{pageName}</div>
                     <div className={styles.rightContainer}>
-                        <div className={styles.calendarIcon}><span className={styles.calDate}>{today}</span><img src="https://cdn-icons-png.flaticon.com/128/5503/5503356.png" /></div>
-                        <div className={styles.profileIcon}><img src="https://cdn-icons-png.flaticon.com/128/64/64572.png" /></div>
+                        <div className={styles.calendarIcon}><span className={styles.calDate}>{today}</span><img src="https://cdn-icons-png.flaticon.com/128/5503/5503356.png" alt="calImg"/></div>
+                        <div className={styles.profileIcon}><img src="https://cdn-icons-png.flaticon.com/128/64/64572.png" alt="profileIcon"/></div>
                     </div>
                 </div>
             </div>

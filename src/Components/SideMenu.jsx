@@ -1,5 +1,5 @@
 // import useful hooks from react-redux
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 
 // import required actions and selector from reducers
 import { toggleSideMenu } from "../Redux/Reducer/HomePageReducer"

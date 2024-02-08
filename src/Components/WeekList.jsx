@@ -31,7 +31,7 @@ export default function WeekList() {
             {habits.map((habit, index) => (
                 <div className={styles.detailContainer} key={index}>
                     <div className={styles.leftContainer}>
-                        <div className={styles.title}>{habit.title.text} {habit.title.img ? <img src={habit.title.img} className={styles.imgTag} /> : ""}</div>
+                        <div className={styles.title}>{habit.title.text} {habit.title.img ? <img src={habit.title.img} className={styles.imgTag} alt="catImg"/> : ""}</div>
                         <div className={styles.rightContainer}>
                             <div className={styles.time}>{habit.time}</div>
                             <div onClick={() => handleFavourite(habit)} className={habit.favourite ? styles.favourite : styles.actFavourite}><img src={habit.favourite ? "https://cdn-icons-png.flaticon.com/128/1828/1828884.png" : "https://cdn-icons-png.flaticon.com/128/56/56786.png"} alt="favorite"></img></div>

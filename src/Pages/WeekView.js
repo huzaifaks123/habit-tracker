@@ -5,13 +5,13 @@ import { useEffect, useState } from "react"
 import styles from "../styles/WeekList.module.css"
 
 // import required actions and selector from reducers
-import { homeSelector, setCurrWeekStatus } from "../Redux/Reducer/HomePageReducer"
+import { setCurrWeekStatus } from "../Redux/Reducer/HomePageReducer"
 
 // import Component here
 import WeekList from "../Components/WeekList"
 
 // import useful hooks from react-redux
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 
 // create and export WeekViewPage
 export default function WeekView() {
@@ -55,15 +55,15 @@ export default function WeekView() {
         // calling function here
         handleWeekDays()
         handleMonthYear()
-    }, [])
+    }, [dispatch])
 
     // return components here
     return (
         <div className={styles.weekViewContainer}>
             <div className={styles.monthYear}>
-                <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png"></img>
+                <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="left-arrorw"></img>
                 <div>{monthYear}</div>
-                <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png"></img>
+                <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="right-arrorw"></img>
             </div>
             <div className={styles.daysContainer}>
                 {weekDays.map((day, index) => (

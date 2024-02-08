@@ -109,7 +109,7 @@ export default function CreateTracker() {
                     onChange={handleTextChange} />
                 <div className={styles.category}>
                     {Data.map((data, index) => (
-                        <div onClick={() => handleCategory(data)} className={category.text === data.title ? styles.actCategoryBtn : styles.CategoryBtn} key={index}>{data.title} <img className={styles.imgTag} src={data.img} /></div>
+                        <div onClick={() => handleCategory(data)} className={category.text === data.title ? styles.actCategoryBtn : styles.CategoryBtn} key={index}>{data.title} <img className={styles.imgTag} src={data.img} alt="catImg"/></div>
                     ))}
                 </div>
                 <div className={styles.week}>
